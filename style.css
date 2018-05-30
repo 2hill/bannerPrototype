@@ -1,0 +1,15 @@
+body {
+    background-color: #cccccc;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 250px);
+}
+.banner { 
+    background-image: url("../img/300x250_ps4.jpg");
+    width: 300px;
+    height: 250px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 1;
+}
