@@ -3,16 +3,14 @@
 // modal toggle
 
 let overlay = document.getElementById('overlay');
-let open = document.getElementById('open').addEventListener("click", openModal);
-let close = document.getElementById('close').addEventListener("click", closeModal);
+let open = document.getElementById('open').addEventListener("click", openlightBox);
+let close = document.getElementById('close').addEventListener("click", closelightBox);
 
-function openModal() {
-    overlay.classList.remove("is-hidden");
-
+function openlightBox() {
+    overlay.style.display = "grid";;
 }
-
-function closeModal() {
-    overlay.classList.add("is-hidden");
+function closelightBox() {
+    overlay.style.display = "none";;
 }
 
 
