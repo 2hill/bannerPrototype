@@ -1,0 +1,155 @@
+body {
+    background-color: #cccccc;
+}
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.banner,
+.available,
+.preorder,
+.logo,
+.white,
+.dvd {
+    width: 300px;
+    height: 250px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 1;
+    justify-self: end;
+    align-self: center;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    background-image: url("../assets/small/bg300x250.png");
+}
+.wrapper {
+    background-image: url("../assets/small/300x250.jpg");
+    display: none;
+}
+
+.available {
+    background-image: url("../assets/small/available300x250.png");
+    z-index: 2;
+    -webkit-animation-name: fadeIn, pulse;
+    animation-name: fadeIn, pulse;
+    animation-duration: 4s, 2s;
+    -webkit-animation-duration: 4s, 2s;
+    animation-delay: 3s, 5s;
+    -webkit-animation-animation-delay: 3s, 5s;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-fill-mode: both;
+}
+
+.preorder {
+    background-image: url("../assets/small/preorder300x250.png");
+    animation-duration: 4s;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.dvd {
+    background-image: url("../assets/small/dvd300x250.png");
+    -webkit-animation-name: dvd;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: backwards;
+    animation-name: dvd;
+    animation-duration: 4s;
+    animation-fill-mode: backwards;
+}
+
+.white {
+    background-image: url("../assets/small/white300x250.png");
+    animation: move 5s;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.logo {
+    background-image: url("../assets/small/logo300x250.png");
+    animation-delay: 4s;
+    animation-duration: 4s;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-fill-mode: backwards;
+}
+
+            /* Keyframes*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0%, 0, 0);
+        transform: translate3d(0%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes dvd {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes dvd {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
