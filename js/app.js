@@ -21,3 +21,5 @@ function closeModal() {
 // partie static: if opera div display none/ display grid  static Image.
 
 //when click on overlay or croix close de modal
+
+//prevent modal tant que animation pas finie

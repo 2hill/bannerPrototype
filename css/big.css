@@ -45,6 +45,7 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
+    z-index: 3;
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAowAAAKMB8MeazgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAB5SURBVDiNrZPRCcAwCEQfnUiySAZuF8kSWeH6Yz8KrQZMQAicJ+epAB0YwAmYJKIADLic0/GPPCbQAnLznCd/4NWUFfkgy1VjH8CryA95ApYltAiTRCZxpuoW+gz9WXE6NPeg+ra1UDIxGlWEObe4SGxY5fIxlc75Bkt9V4JS7KWJAAAAAElFTkSuQmCC59ef34356faa7edebc7ed5432ddb673d');
 }
 
@@ -52,7 +53,7 @@
     font-weight: 300;
 }
 
-.overlay {
+#overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -60,16 +61,15 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     z-index: 2;
-}
 
-
-.modal-content {
-    display: grid;
-    width: 100%;
-    grid-template-columns:  1fr;
-    grid-template-rows: 1fr;
+  
    
+
 }
+
+
+
+   
 
 
 .fullBg {
@@ -77,7 +77,11 @@
  
     height: 600px;
     width: 940px;
-    margin: 0 auto;
+    
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    justify-self: end;
+    align-self: center;
    
   
    
