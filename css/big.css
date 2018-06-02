@@ -1,7 +1,5 @@
-
 #overlay {
     display: none;
-
     position: fixed;
     top: 0;
     left: 0;
@@ -11,8 +9,7 @@
     z-index: 2;
     justify-self: end;
     align-self: center;
-  
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat( 4, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
 
@@ -28,14 +25,11 @@
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: #999;
-
     grid-column: 3 / 3;
-    grid-row: 3 / 3;
+    grid-row: 2 / 3;
     justify-self: end;
     align-self: center;
 }
-
-
 
 .button-close {
     display: inline-block;
@@ -49,56 +43,53 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAowAAAKMB8MeazgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAB5SURBVDiNrZPRCcAwCEQfnUiySAZuF8kSWeH6Yz8KrQZMQAicJ+epAB0YwAmYJKIADLic0/GPPCbQAnLznCd/4NWUFfkgy1VjH8CryA95ApYltAiTRCZxpuoW+gz9WXE6NPeg+ra1UDIxGlWEObe4SGxY5fIxlc75Bkt9V4JS7KWJAAAAAElFTkSuQmCC59ef34356faa7edebc7ed5432ddb673d');
 }
 
-
+.fullBg,
 .available900,
-.cross900,
 .dvd900,
+.cross900,
 .footer900,
 .join900,
 .mediainfo900 {
-      height: 600px;
-      width: 960px;
-    grid-column: 3 / 4;
-    grid-row: 1 / 1;
-    justify-self: end;
-    align-self: center;
-    background-repeat: no-repeat;
-    z-index: 1;
-}
-
-
-.fullBg {
-    background: url("../assets/lightbox/bg900.png") center center no-repeat;
     height: 600px;
-    width: 960px;
+    width: 940px;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
     justify-self: center;
     align-self: center;
+    background-repeat: no-repeat;
     z-index: 4;
 }
 
+.fullBg {
+    background: url("../assets/lightbox/bg900.png") center center;
+    display: grid;
+  
+}
+
 .available900 {
-    background: url("../assets/lightbox/available900.png") center center no-repeat;
-    z-index: 5;
+    background: url("../assets/lightbox/available900.png") center center;
 }
+
 .cross900 {
-    background: url("../assets/lightbox/cross900.png") center center no-repeat;
-    z-index: 6;
+    background: url("../assets/lightbox/cross900.png") center center;
+    cursor: pointer;
+    z-index: 5;
+   
+    
 }
+
 .dvd900 {
-    background: url("../assets/lightbox/dvd900.png") center center no-repeat;
-    z-index: 7;
+    background: url("../assets/lightbox/dvd900.png") center center;
 }
+
 .footer900 {
-    background: url("../assets/lightbox/footer900.png") center center no-repeat;
-    z-index: 8;
+    background: url("../assets/lightbox/footer900.png") center center;
 }
+
 .join900 {
-    background: url("../assets/lightbox/mediainfo900.png") center center no-repeat;
-    z-index: 9;
+    background: url("../assets/lightbox/join900.png") center center;
 }
+
 .mediainfo900 {
-    background: url("../assets/lightbox/bg.png") center center no-repeat;
-    z-index: 10;
+    background: url("../assets/lightbox/mediainfo900.png") center center;
 }

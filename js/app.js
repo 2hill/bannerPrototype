@@ -3,16 +3,16 @@
 // modal toggle
 
 let overlay = document.getElementById('overlay');
-let open = document.getElementById('open').addEventListener("click", openlightBox);
-let close = document.getElementById('close').addEventListener("click", closelightBox);
 
 function openlightBox() {
-    overlay.style.display = "grid";;
+    overlay.style.display = "grid";
 }
 function closelightBox() {
-    overlay.style.display = "none";;
+    overlay.style.display = "none"; 
 }
 
+let open = document.getElementById('open').addEventListener("click", openlightBox);
+let close = document.getElementsByClassName('cross900').addEventListener("click", closelightBox);
 
 
 
