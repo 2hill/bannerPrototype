@@ -61,19 +61,10 @@
 .fullBg {
     background: url("../assets/lightbox/bg900.png") center center;
     display: grid;
-  
 }
 
 .available900 {
     background: url("../assets/lightbox/available900.png") center center;
-}
-
-.cross900 {
-    background: url("../assets/lightbox/cross900.png") center center;
-    cursor: pointer;
-    z-index: 5;
-   
-    
 }
 
 .dvd900 {
@@ -85,9 +76,14 @@
 }
 
 .join900 {
-    background: url("../assets/lightbox/join.png") center center no-repeat;
+    background: url("../assets/lightbox/join900.png") center center no-repeat;
 }
 
 .mediainfo900 {
     background: url("../assets/lightbox/mediainfo900.png") center center;
+}
+.close {
+    background-image: url("../assets/lightbox/cross900.png") center center no-repeat;
+    cursor: pointer;
+    z-index: 5;
 }

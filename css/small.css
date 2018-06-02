@@ -1,6 +1,7 @@
 body {
     background-color: #cccccc;
 }
+
 .container {
     display: grid;
     width: 100%;
@@ -22,20 +23,26 @@ body {
     align-self: center;
     background-repeat: no-repeat;
     z-index: 1;
-   
 }
 
 .banner {
     background-image: url("../assets/small/bg300x250.png");
 }
-.wrapper {
-    background-image: url("../assets/small/300x250.jpg");
-    display: none;
+
+.dvd {
+    background-image: url("../assets/small/dvd300x250.png");
+}
+
+.logo {
+    background-image: url("../assets/small/logo300x250.png");
 }
 
 .available {
     background-image: url("../assets/small/available300x250.png");
+}
 
+.available,
+.available900 {
     -webkit-animation-name: fadeIn, pulse;
     animation-name: fadeIn, pulse;
     animation-duration: 4s, 2s;
@@ -43,7 +50,7 @@ body {
     animation-delay: 3s, 5s;
     -webkit-animation-animation-delay: 3s, 5s;
     animation-iteration-count: 1, infinite;
-    -webkit-animation-iteration-count: 1, infinite;
+    -webkit-animation-iteration-count: 1, 2;
     animation-fill-mode: both;
 }
 
@@ -54,8 +61,8 @@ body {
     animation-name: fadeIn;
 }
 
-.dvd {
-    background-image: url("../assets/small/dvd300x250.png");
+.dvd,
+.dvd900 {
     -webkit-animation-name: dvd;
     -webkit-animation-duration: 4s;
     -webkit-animation-fill-mode: backwards;
@@ -71,8 +78,8 @@ body {
     animation-name: fadeIn;
 }
 
-.logo {
-    background-image: url("../assets/small/logo300x250.png");
+.logo,
+.footer900 {
     animation-delay: 4s;
     animation-duration: 4s;
     -webkit-animation-name: fadeIn;
@@ -80,7 +87,7 @@ body {
     animation-fill-mode: backwards;
 }
 
-            /* Keyframes*/
+/* Keyframes*/
 
 @keyframes fadeIn {
     from {
@@ -114,8 +121,8 @@ body {
         transform: scale3d(1, 1, 1);
     }
     50% {
-        -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05);
+        -webkit-transform: scale3d(0.8, 0.8, 0.8);
+        transform: scale3d(0.8, 0.8, 0.8);
     }
     100% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -129,8 +136,8 @@ body {
         transform: scale3d(1, 1, 1);
     }
     50% {
-        -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05);
+        -webkit-transform: scale3d(0.8, 0.8, 0.8);
+        transform: scale3d(0.8, 0.8, 0.8);
     }
     100% {
         -webkit-transform: scale3d(1, 1, 1);

@@ -12,7 +12,7 @@ function closelightBox() {
 }
 
 let open = document.getElementById('open').addEventListener("click", openlightBox);
-let close = document.getElementsByClassName('cross900').addEventListener("click", closelightBox);
+let close = document.getElementById('close').addEventListener("click", closelightBox);
 
 
 
