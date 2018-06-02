@@ -21,6 +21,8 @@ body {
     justify-self: end;
     align-self: center;
     background-repeat: no-repeat;
+    z-index: 1;
+   
 }
 
 .banner {
@@ -33,7 +35,7 @@ body {
 
 .available {
     background-image: url("../assets/small/available300x250.png");
-    z-index: 2;
+
     -webkit-animation-name: fadeIn, pulse;
     animation-name: fadeIn, pulse;
     animation-duration: 4s, 2s;
