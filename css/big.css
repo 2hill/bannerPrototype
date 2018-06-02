@@ -31,16 +31,16 @@
     align-self: center;
 }
 
-.button-close {
+#close {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 25px;
     position: absolute;
-    top: 100px;
-    right: 250px;
+    top: 35px;
+    right:35px;
     cursor: pointer;
-    z-index: 3;
-    background-image: url('../assets/lightbox/croix.png');
+    z-index: 5;
+    background: url('../assets/lightbox/cross900.png');
 }
 
 .fullBg,
@@ -61,6 +61,7 @@
 .fullBg {
     background: url("../assets/lightbox/bg900.png") center center;
     display: grid;
+    position: relative;
 }
 
 .available900 {
@@ -81,9 +82,4 @@
 
 .mediainfo900 {
     background: url("../assets/lightbox/mediainfo900.png") center center;
-}
-.close {
-    background-image: url("../assets/lightbox/cross900.png") center center no-repeat;
-    cursor: pointer;
-    z-index: 5;
 }
