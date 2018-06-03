@@ -13,14 +13,12 @@
     grid-template-rows: repeat(4, 1fr);
 }
 
-
 #close {
-    
     width: 24px;
     height: 25px;
     position: absolute;
     top: 35px;
-    right:35px;
+    right: 35px;
     cursor: pointer;
     z-index: 5;
     background: url('../assets/lightbox/cross900.png');
@@ -59,6 +57,10 @@
     background: url("../assets/lightbox/footer900.png") center center;
 }
 
+.mediainfo900 {
+    background: url("../assets/lightbox/mediainfo900.png") center center;
+}
+
 .join900 {
     background: url("../assets/lightbox/join900.png") center center no-repeat;
     width: 117px;
@@ -67,20 +69,20 @@
     position: absolute;
     cursor: pointer;
     top: 0px;
-    right:500px;
-
-    -webkit-animation-name:  pulse;
-    animation-name:  pulse;
-    animation-duration:  2s;
+    right: 500px;
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    animation-duration: 2s;
     -webkit-animation-duration: 2s;
-    animation-delay:  8s;
-    -webkit-animation-animation-delay:  8s;
-    animation-iteration-count:  infinite;
-    -webkit-animation-iteration-count:  infinite;
+    -moz-animation-duration: 2s;
+    animation-delay: 8s;
+    -webkit-animation-animation-delay: 8s;
+    -moz-animation-animation-delay: 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
     animation-fill-mode: both;
-
-}
-
-.mediainfo900 {
-    background: url("../assets/lightbox/mediainfo900.png") center center;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
 }
