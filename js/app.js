@@ -3,30 +3,28 @@
 // modal toggle
 
 let overlay = document.getElementById('overlay');
+let open = document.getElementById('open');
+let close = document.getElementById('close')
 
 function openlightBox() {
-    overlay.style.display = "grid";
+    setTimeout(function(){ overlay.style.display = "grid"}, 3000);
 }
 function closelightBox() {
     overlay.style.display = "none"; 
 }
 
-let open = document.getElementById('open').addEventListener("mouseover", openlightBox);
-let close = document.getElementById('close').addEventListener("click", closelightBox);
+open.addEventListener("mouseover", openlightBox);
+open.addEventListener("click", openlightBox);
+close.addEventListener("click", closelightBox);
+//overlay.addEventListener("click", closelightBox);
 
-/*
-var test = document.getElementById("test");
-  
-  
-// this handler will be executed only once when the cursor moves over the unordered list
-test.addEventListener("mouseenter", function( event ) {   
-  // highlight the mouseenter target
-  event.target.style.color = "purple";
 
+
+// toggle countdown
 
 
 // partie static: if opera div display none/ display grid  static Image.
 
-//when click on overlay or croix close de modal
+
 
 //prevent modal tant que animation pas finie*/
