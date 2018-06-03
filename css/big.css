@@ -32,7 +32,7 @@
 }
 
 #close {
-    display: inline-block;
+    
     width: 24px;
     height: 25px;
     position: absolute;
@@ -78,6 +78,24 @@
 
 .join900 {
     background: url("../assets/lightbox/join900.png") center center no-repeat;
+    width: 117px;
+    height: 59px;
+    z-index: 6;
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    right:500px;
+
+    -webkit-animation-name:  pulse;
+    animation-name:  pulse;
+    animation-duration:  2s;
+    -webkit-animation-duration: 2s;
+    animation-delay:  8s;
+    -webkit-animation-animation-delay:  8s;
+    animation-iteration-count:  infinite;
+    -webkit-animation-iteration-count:  infinite;
+    animation-fill-mode: both;
+
 }
 
 .mediainfo900 {
