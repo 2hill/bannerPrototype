@@ -24,10 +24,3 @@ open.addEventListener("click", load);
 close.addEventListener("click", closelightBox);
 
 
-
-//responsive
-
-
-// reduire img size
-
-

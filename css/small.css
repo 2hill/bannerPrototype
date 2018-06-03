@@ -63,7 +63,8 @@ body {
 }
 
 .dvd,
-.dvd900 {
+.dvd900,
+.dvdmobile {
     -webkit-animation-name: dvd;
     -webkit-animation-duration: 4s;
     -webkit-animation-fill-mode: backwards;
@@ -261,5 +262,66 @@ body {
     .banner {
         background-image: url("../assets/small/smallstatic.jpg");
         z-index: 2;
+    }
+}
+
+/*responsive mobile*/
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+    .banner,
+    .available,
+    .preorder,
+    .logo,
+    .white,
+    .dvd,
+    .spinner {
+        width: 300px;
+        height: 250px;
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    #loadbg {
+        width: 300px;
+        height: 250px;
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 7;
+        display: none;
+    }
+    .fullBg {
+        background: url("../assets/mobile/bgmobile.png") center center no-repeat;
+        position: relative;
+        z-index: 1;
+    }
+    .available900,
+    .dvd900,
+    .footer900,
+    .mediainfo900,
+    .join900 {
+        display: none;
+    }
+    .dvdmobile {
+        background-image: url("../assets/mobile/dvdmobile.png");
+         width: 300px;
+         height: 250px;
+         grid-column: 1;
+         grid-row: 2;
+         justify-self: center;
+         align-self: center;
+         background-repeat: no-repeat;
+         z-index: 1;
     }
 }
