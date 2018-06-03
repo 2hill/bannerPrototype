@@ -11,8 +11,17 @@ function closelightBox() {
     overlay.style.display = "none"; 
 }
 
-let open = document.getElementById('open').addEventListener("click", openlightBox);
+let open = document.getElementById('open').addEventListener("mouseover", openlightBox);
 let close = document.getElementById('close').addEventListener("click", closelightBox);
+
+/*
+var test = document.getElementById("test");
+  
+  
+// this handler will be executed only once when the cursor moves over the unordered list
+test.addEventListener("mouseenter", function( event ) {   
+  // highlight the mouseenter target
+  event.target.style.color = "purple";
 
 
 
@@ -20,4 +29,4 @@ let close = document.getElementById('close').addEventListener("click", closeligh
 
 //when click on overlay or croix close de modal
 
-//prevent modal tant que animation pas finie
+//prevent modal tant que animation pas finie*/
