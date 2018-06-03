@@ -267,7 +267,7 @@ body {
 
 /*responsive mobile*/
 
-@media screen and (min-width: 375px) and (max-width: 667px) {
+@media  (max-width: 1024px) {
     .container {
         display: grid;
         width: 100%;
