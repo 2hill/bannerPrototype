@@ -309,7 +309,9 @@ body {
     }
     .dvdmobile {
         background: url("../assets/mobile/dvdmobile.png") center center no-repeat;
-        cursor: pointer;
+        z-index: 20;
+        animation-name: pulse;
+        animation-iteration-count: infinite;
     }
     .available900,
     .dvd900,
@@ -325,7 +327,7 @@ body {
         top: 35px;
         right: 300px;
         cursor: pointer;
-        z-index: 5;
+        z-index: 12;
         background: url('../assets/lightbox/cross900.png');
     }
 }
