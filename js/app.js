@@ -26,14 +26,11 @@ close.addEventListener("click", closelightBox);
 //overlay.addEventListener("click", closelightBox);
 
 
-
-// toggle countdown
-
+//responsive
 
 // partie static: if opera div display none/ display grid  static Image.
 
-
+// reduire img size
 
 //prevent modal tant que animation pas finie*/
 
-//responsive
