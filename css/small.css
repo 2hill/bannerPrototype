@@ -28,7 +28,6 @@ body {
 
 .banner {
     background-image: url("../assets/small/bg300x250.png");
-
 }
 
 .dvd {
@@ -199,7 +198,6 @@ body {
     }
 }
 
-
 @keyframes dvd {
     0% {
         height: 0%;
@@ -217,6 +215,7 @@ body {
         height: 100%;
     }
 }
+
 @-moz-keyframes dvd {
     0% {
         height: 0%;
@@ -227,8 +226,12 @@ body {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @-webkit-keyframes spin {
@@ -239,6 +242,7 @@ body {
         transform: rotate(360deg);
     }
 }
+
 @-moz-keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -248,16 +252,14 @@ body {
     }
 }
 
-/*fallback*/ 
+/*fallback*/
 
-
-@supports not (animation: all) {
-.fullBg {
-    background: url("../assets/lightbox/bigstatic.jpg") center center;
-}
-
-.banner{
-    background-image: url("../assets/small/smallstatic.jpg");
-    z-index: 2;
-}
+@supports not ((animation: all) or (transform: all)) {
+    .fullBg {
+        background: url("../assets/lightbox/bigstatic.jpg") center center;
+    }
+    .banner {
+        background-image: url("../assets/small/smallstatic.jpg");
+        z-index: 2;
+    }
 }

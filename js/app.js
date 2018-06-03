@@ -27,9 +27,7 @@ close.addEventListener("click", closelightBox);
 
 //responsive
 
-// partie static: if opera div display none/ display grid  static Image.
 
 // reduire img size
 
-//ajout compatiblite
 
