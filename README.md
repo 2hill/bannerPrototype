@@ -1,2 +1,4 @@
 # bannerPrototype
-banner made in vanilla Js/ Css animations
+Banner of the famous video game! vanilla Js/ Css animations
+
+![Alt text](assets/screen.jpeg)
